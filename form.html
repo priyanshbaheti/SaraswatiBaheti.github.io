@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Login </title>
+	<style type="text/css">
+		body{
+			background-repeat: no-repeat;
+			background-size: cover;
+
+		}
+		form{
+			height: 420px;
+			width: 350px;
+			background-color: rgba(0,0,0,.5);
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+               padding: 30px;
+               align-items: center;
+               justify-content: center;
+              
+		}
+		input{
+			margin: 30px 20px;
+			background-color: transparent;
+			font-size: 20px;
+			outline: none;
+			height: 30px;
+			color: white;
+			
+		}
+		input[type="text"]{
+			text-transform: capitalize;
+		}
+		input[type="submit"]{
+			  width: 200px;
+			  height: 40px;
+			  background-color: #fd79a8;
+			  color: white;
+			  border-radius: 50px;
+
+
+		}
+               input[type="submit"]:hover{
+			  width: 200px;
+			  height: 40px;
+			  background-color:yellow;
+			  color: black;
+			  border-radius: 50px;
+			    
+
+
+		}
+		 h1{
+		 	color: white;
+		 }
+		 ::placeholder{
+		 	color: white;
+		 }
+		 input [type="passowrd"]{
+               
+		 }
+		 a{
+		 	color: #fff;
+		 	
+		 }
+	</style>
+</head>
+<body background="images/bgimg.jpg">
+	<form onsubmit="myfun()">
+		   <h1>Login</h1>
+		<input type="text" name="name" id="name" class="user" placeholder="Enter You name" maxlength="20" minlength="3" required autocomplete="off" /><br>
+		<input type="password" class="pass" placeholder="Enter You password" maxlength="19" minlength="5"  required  autocomplete="off"><br>
+		<input type="submit" name="" value="Submit"> <br>
+		<a href="#">Forgot Passwoerd</a>
+	</form>
+	
+</body>
+</html>

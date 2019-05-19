@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grid system</title>
+	<style type="text/css">
+		body{
+			 margin: 0;
+			 padding: 0;
+
+		}
+		main{
+			margin: 100px ;
+			border: 1px solid black;
+			display: grid;
+			grid-template-rows: 50px 100px 200px 50px 50px 100px;
+			grid-template-columns: repeat(4, 1fr);
+             grid-gap: 20px;
+      
+		}
+		 .div-1{
+		 	background-color: red;
+		 	grid-column: 1/-1;
+		 	
+		 }
+		 .div-2{
+		 	background-color: yellow;
+
+		 }
+		 .div-3{
+		 	background-color: blue;
+		 }
+		 .div-4{
+		 	background-color: green;
+		 }
+		 .div-5{
+		 	background-color: black;
+		 	grid-column: 4/5;
+		 	grid-row: 2/5;
+		 }
+		 .div-6{
+		 	background-color: pink;
+		 	 grid-column: 1/4;
+		 	 grid-row: 3/5;
+		 }
+		 .footer{
+		 	background-color: orange;
+		 	 grid-column: 1/5;
+		 }
+		 .div-7{
+		 	background-color: gold;
+		 	grid-column: 1/3;
+		 }
+		 .div-8{
+		       background-color: lightgreen;
+		       grid-column: 3/-1;
+		 }
+
+	</style>
+</head>
+<body>
+<main>
+   <div class="div-1">d-1</div>
+   <div class="div-2">d-2</div>
+   <div class="div-3">d-3</div>
+   <div class="div-4">d-4</div>
+   <div class="div-5">d-5</div>
+   <div class="div-6">d-6</div>
+   <div class="footer">footer</div>
+   <div class="div-7">1/2 divs</div>
+   <div class="div-8">1/2 divs</div>
+</main>
+</body>
+</html>
